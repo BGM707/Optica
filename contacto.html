@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Óptica Crisoull - Contacto</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Incluir el CDN de SweetAlert -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<style>
+			/* Estilos para el carrito de compras */
+			#cart {
+				position: fixed;
+				top: 0;
+				right: 0;
+				width: 300px;
+				height: 100%;
+				background: #fff;
+				box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+				z-index: 1000;
+				transform: translateX(100%);
+				transition: transform 0.3s ease;
+			}
+			#cart.open {
+				transform: translateX(0);
+			}
+			#cart-header {
+				background: #333;
+				color: #fff;
+				padding: 10px;
+				text-align: center;
+			}
+			#cart-items {
+				padding: 10px;
+			}
+			.cart-item {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 10px;
+			}
+			.cart-item img {
+				width: 50px;
+				height: auto;
+			}
+			.cart-item-details {
+				flex: 1;
+				margin-left: 10px;
+			}
+			.cart-item-actions {
+				display: flex;
+				align-items: center;
+			}
+			.cart-item-actions button {
+				margin-left: 5px;
+			}
+			#cart-footer {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				background: #333;
+				color: #fff;
+				padding: 10px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header Wrapper -->
+			<div id="header-wrapper">
+				<div class="container">
+
+					<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+							<h1><a href="index.html" id="logo">Óptica Crisoull</a></h1>
+
+							<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a href="index.html">Inicio</a></li>
+									<li>
+										<a href="#">Productos</a>
+										<ul>
+											<li><a href="marcos.html">Marcos</a></li>
+											<li><a href="cristales.html">Cristales</a></li>
+											<li><a href="lentes_contacto.html">Lentes de Contacto</a></li>
+											<li><a href="accesorios.html">Accesorios</a></li>
+										</ul>
+									</li>
+									<li><a href="servicios.html">Servicios</a></li>
+									<li><a href="recetas.html">Recetas</a></li>
+									<li class="current_page_item"><a href="contacto.html">Contacto</a></li>
+									<li><a href="login.html">Login</a></li>
+									<li><a href="#" id="cart-button">Carrito (0)</a></li>
+								</ul>
+							</nav>
+
+						</div>
+					</header>
+
+				</div>
+			</div>
+
+			<!-- Main Wrapper -->
+			<div id="main-wrapper">
+				<div class="wrapper style1">
+					<div class="inner">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<header class="first major">
+										<h2>Contacto</h2>
+										<p>Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarnos.</p>
+									</header>
+								</div>
+								<div class="col-12">
+									<section>
+										<form method="post" action="#">
+											<div class="row gtr-uniform">
+												<div class="col-6 col-12-xsmall"><input type="text" name="nombre" id="nombre" placeholder="Nombre" required /></div>
+												<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" required /></div>
+												<div class="col-12"><input type="text" name="asunto" id="asunto" placeholder="Asunto" required /></div>
+												<div class="col-12"><textarea name="mensaje" id="mensaje" placeholder="Mensaje" rows="6" required></textarea></div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" value="Enviar" class="button primary" /></li>
+														<li><input type="reset" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer Wrapper -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="col-3 col-6-medium col-12-small">
+							<section>
+								<h2>Enlaces Rápidos</h2>
+								<ul class="divided">
+									<li><a href="marcos.html">Marcos</a></li>
+									<li><a href="cristales.html">Cristales</a></li>
+									<li><a href="lentes_contacto.html">Lentes de Contacto</a></li>
+									<li><a href="accesorios.html">Accesorios</a></li>
+									<li><a href="ofertas.html">Ofertas Especiales</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-3 col-6-medium col-12-small">
+							<section>
+								<h2>Más Enlaces</h2>
+								<ul class="divided">
+									<li><a href="servicios.html">Servicios</a></li>
+									<li><a href="recetas.html">Recetas</a></li>
+									<li><a href="contacto.html">Contacto</a></li>
+									<li><a href="login.html">Login</a></li>
+								</ul>
+							</section>
+							<section>
+								<h2>Aún Más Enlaces</h2>
+								<ul class="divided">
+									<li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+									<li><a href="politica-devoluciones.html">Política de Devoluciones</a></li>
+									<li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+									<li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-6 col-12-medium imp-medium">
+							<section>
+								<h2><strong>Óptica Crisoull</strong></h2>
+								<p>Bienvenido a Óptica Crisoull, tu tienda en línea para todas tus necesidades ópticas. Ofrecemos una amplia gama de productos y servicios para cuidar tu visión y tus gafas.</p>
+								<a href="about.html" class="button alt icon solid fa-arrow-circle-right">Más Información</a>
+							</section>
+							<section>
+								<h2>Contáctanos</h2>
+								<div>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<dl class="contact">
+												<dt>Twitter</dt>
+												<dd><a href="#">@optica_Crisoull</a></dd>
+												<dt>Facebook</dt>
+												<dd><a href="#">facebook.com/optica_Crisoull</a></dd>
+												<dt>WWW</dt>
+												<dd><a href="#">optica_Crisoull.com</a></dd>
+												<dt>Email</dt>
+												<dd><a href="#">info@optica_Crisoull.com</a></dd>
+											</dl>
+										</div>
+										<div class="col-6 col-12-small">
+											<dl class="contact">
+												<dt>Dirección</dt>
+												<dd>
+													1234 Calle Ficticia<br />
+													Ciudad, Estado 00000-0000<br />
+													País
+												</dd>
+												<dt>Teléfono</dt>
+												<dd>(000) 000-0000</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="col-12">
+							<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Óptica Crisoull. Todos los derechos reservados</li><li>Diseño: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+			<!-- Carrito de Compras -->
+			<div id="cart">
+				<div id="cart-header">
+					<h2>Carrito de Compras</h2>
+					<button id="close-cart">Cerrar</button>
+				</div>
+				<div id="cart-items"></div>
+				<div id="cart-footer">
+					<p>Total: $<span id="cart-total">0</span></p>
+					<button id="checkout-button">Pagar</button>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			// Función para agregar productos al carrito
+			function addToCart(name, price, image) {
+				let cart = JSON.parse(localStorage.getItem('cart')) || [];
+				let item = cart.find(i => i.name === name);
+				if (item) {
+					item.quantity++;
+				} else {
+					cart.push({ name, price, image, quantity: 1 });
+				}
+				localStorage.setItem('cart', JSON.stringify(cart));
+				updateCart();
+			}
+
+			// Función para actualizar el carrito
+			function updateCart() {
+				let cart = JSON.parse(localStorage.getItem('cart')) || [];
+				let cartItems = document.getElementById('cart-items');
+				let cartTotal = document.getElementById('cart-total');
+				cartItems.innerHTML = '';
+				let total = 0;
+
+				cart.forEach(item => {
+					let div = document.createElement('div');
+					div.className = 'cart-item';
+					div.innerHTML = `
+						<img src="${item.image}" alt="${item.name}">
+						<div class="cart-item-details">
+							<h3>${item.name}</h3>
+							<p>Precio: $${item.price}</p>
+							<p>Cantidad: ${item.quantity}</p>
+						</div>
+						<div class="cart-item-actions">
+							<button onclick="changeQuantity('${item.name}', -1)">-</button>
+							<button onclick="changeQuantity('${item.name}', 1)">+</button>
+							<button onclick="removeFromCart('${item.name}')">Eliminar</button>
+						</div>
+					`;
+					cartItems.appendChild(div);
+					total += item.price * item.quantity;
+				});
+
+				cartTotal.textContent = total.toFixed(2);
+				document.getElementById('cart-button').textContent = `Carrito (${cart.length})`;
+			}
+
+			// Función para cambiar la cantidad de un producto en el carrito
+			function changeQuantity(name, change) {
+				let cart = JSON.parse(localStorage.getItem('cart')) || [];
+				let item = cart.find(i => i.name === name);
+				if (item) {
+					item.quantity += change;
+					if (item.quantity <= 0) {
+						cart = cart.filter(i => i.name !== name);
+					}
+					localStorage.setItem('cart', JSON.stringify(cart));
+					updateCart();
+				}
+			}
+
+			// Función para eliminar un producto del carrito
+			function removeFromCart(name) {
+				let cart = JSON.parse(localStorage.getItem('cart')) || [];
+				cart = cart.filter(i => i.name !== name);
+				localStorage.setItem('cart', JSON.stringify(cart));
+				updateCart();
+			}
+
+			// Función para abrir y cerrar el carrito
+			document.getElementById('cart-button').addEventListener('click', function() {
+				document.getElementById('cart').classList.toggle('open');
+			});
+
+			document.getElementById('close-cart').addEventListener('click', function() {
+				document.getElementById('cart').classList.remove('open');
+			});
+
+			// Función para redirigir al pago seguro
+			document.getElementById('checkout-button').addEventListener('click', function() {
+				let cart = JSON.parse(localStorage.getItem('cart')) || [];
+				if (cart.length > 0) {
+					// Aquí puedes redirigir a la plataforma de pago seguro como WebPay o Transferencia Bancaria
+					window.location.href = 'https://www.transferencia.cl/pagos';
+				} else {
+					Swal.fire({
+						title: 'Carrito Vacío',
+						text: 'Agrega productos al carrito antes de proceder al pago.',
+						icon: 'warning',
+						confirmButtonText: 'Cerrar'
+					});
+				}
+			});
+
+			// Actualizar el carrito al cargar la página
+			updateCart();
+		</script>
+	</body>
+</html>
