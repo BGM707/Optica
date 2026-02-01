@@ -1,306 +1,326 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Óptica CRISOULL - Inicio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+<html lang="es">
+    <head>
+        <title>Óptica CRISOULL - Inicio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        
+        <style>
+            /* Uniformidad para las imágenes de productos (rectangulares 4:3) */
+            .image.featured img {
+                width: 100%;
+                height: 250px; /* Altura fija para alineación perfecta */
+                object-fit: cover; /* Evita que la imagen se estire, la recorta al centro */
+                object-position: center;
+                border-radius: 4px;
+            }
 
-			<!-- Header Wrapper -->
-			<div id="header-wrapper">
-				<div class="container">
+            /* Uniformidad para miniaturas en la lista de artículos */
+            .box.excerpt .image.left img {
+                width: 150px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 4px;
+            }
 
-					<!-- Header -->
-					<header id="header">
-						<div class="inner">
+            /* Efecto hover suave en botones */
+            .button {
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+            .button:hover {
+                transform: translateY(-2px);
+            }
 
-							<!-- Logo -->
-							<h1><a href="index.html" id="logo">Óptica CRISOULL</a></h1>
+            /* Ajuste para el banner */
+            #banner {
+                background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.pexels.com/photos/33975157/pexels-photo-33975157.jpeg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+        </style>
+    </head>
+    <body class="homepage is-preload">
+        <div id="page-wrapper">
 
-							<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li class="current_page_item"><a href="index.html">Inicio</a></li>
-									<li>
-										<a href="#">Productos</a>
-										<ul>
-											<li><a href="marcos.html">Marcos</a></li>
-											<li><a href="cristales.html">Cristales</a></li>
-											<li><a href="lentes_contacto.html">Lentes de Contacto</a></li>
-											<li><a href="accesorios.html">Accesorios</a></li>
-										</ul>
-									</li>
-									<li><a href="servicios.html">Servicios</a></li>
-									<li><a href="recetas.html">Recetas</a></li>
-									<li><a href="contacto.html">Contacto</a></li>
-									<li><a href="login.html">Login</a></li>
-								</ul>
-							</nav>
+            <div id="header-wrapper">
+                <div class="container">
 
-						</div>
-					</header>
+                    <header id="header">
+                        <div class="inner">
 
-					<!-- Banner -->
-					<div id="banner">
-						<h2>Bienvenido a Óptica CRISOULL </h2>
-						<p>Tu tienda en línea para todas tus necesidades ópticas.</p>
-						<a href="productos.html" class="button large icon solid fa-check-circle">Explorar Productos</a>
-					</div>
+                            <h1><a href="index.html" id="logo">Óptica CRISOULL</a></h1>
 
-				</div>
-			</div>
+                            <nav id="nav">
+                                <ul>
+                                    <li class="current_page_item"><a href="index.html">Inicio</a></li>
+                                    <li>
+                                        <a href="#">Productos</a>
+                                        <ul>
+                                            <li><a href="marcos.html">Marcos</a></li>
+                                            <li><a href="cristales.html">Cristales</a></li>
+                                            <li><a href="lentes_contacto.html">Lentes de Contacto</a></li>
+                                            <li><a href="accesorios.html">Accesorios</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="servicios.html">Servicios</a></li>
+                                    <li><a href="recetas.html">Recetas</a></li>
+                                    <li><a href="contacto.html">Contacto</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                </ul>
+                            </nav>
 
-			<!-- Main Wrapper -->
-			<div id="main-wrapper">
-				<div class="wrapper style1">
-					<div class="inner">
+                        </div>
+                    </header>
 
-						<!-- Feature 1 -->
-						<section class="container box feature1">
-							<div class="row">
-								<div class="col-12">
-									<header class="first major">
-										<h2>Nuestros Productos</h2>
-										<p>Descubre nuestra amplia gama de productos ópticos.</p>
-									</header>
-								</div>
-								<div class="col-4 col-12-medium">
-									<section>
-										<a href="marcos.html" class="image featured"><img src="assets/images/marco1.jpg" alt="" /></a>
-										<header class="second icon solid fa-glasses">
-											<h3>Marcos</h3>
-											<p>Marcos de moda para todos los gustos.</p>
-										</header>
-									</section>
-								</div>
-								<div class="col-4 col-12-medium">
-									<section>
-										<a href="cristales.html" class="image featured"><img src="assets/images/cristal1.jpg" alt="" /></a>
-										<header class="second icon solid fa-eye">
-											<h3>Cristales</h3>
-											<p>Cristales de alta calidad para una visión perfecta.</p>
-										</header>
-									</section>
-								</div>
-								<div class="col-4 col-12-medium">
-									<section>
-										<a href="lentes_contacto.html" class="image featured"><img src="assets/images/lentes1.jpg" alt="" /></a>
-										<header class="second icon solid fa-heart">
-											<h3>Lentes de Contacto</h3>
-											<p>Lentes de contacto cómodos y seguros.</p>
-										</header>
-									</section>
-								</div>
-							</div>
-						</section>
+                    <div id="banner">
+                        <h2>Bienvenido a Óptica CRISOULL </h2>
+                        <p>Tu tienda en línea para todas tus necesidades ópticas.</p>
+                        <a href="productos.html" class="button large icon solid fa-check-circle">Explorar Productos</a>
+                    </div>
 
-					</div>
-				</div>
-				<div class="wrapper style2">
-					<div class="inner">
+                </div>
+            </div>
 
-						<!-- Feature 2 -->
-						<section class="container box feature2">
-							<div class="row">
-								<div class="col-6 col-12-medium">
-									<section>
-										<header class="major">
-											<h2>Nuestros Servicios</h2>
-											<p>Ofrecemos una variedad de servicios para cuidar tu visión y tus gafas.</p>
-										</header>
-										<p>Nuestros expertos están aquí para ayudarte con todo lo que necesites. Desde revisiones de la vista hasta ajustes y reparaciones de gafas.</p>
-										<footer>
-											<a href="servicios.html" class="button medium icon solid fa-arrow-circle-right">Ver Servicios</a>
-										</footer>
-									</section>
-								</div>
-								<div class="col-6 col-12-medium">
-									<section>
-										<header class="major">
-											<h2>Ingresa tu Receta</h2>
-											<p>Ingresa tu receta médica para encontrar los mejores productos para ti.</p>
-										</header>
-										<p>Nuestros expertos revisarán tu receta y te recomendarán los mejores productos. Recibe tus productos en la comodidad de tu hogar.</p>
-										<footer>
-											<a href="recetas.html" class="button medium alt icon solid fa-info-circle">Ingresar Receta</a>
-										</footer>
-									</section>
-								</div>
-							</div>
-						</section>
+            <div id="main-wrapper">
+                <div class="wrapper style1">
+                    <div class="inner">
 
-					</div>
-				</div>
-				<div class="wrapper style3">
-					<div class="inner">
-						<div class="container">
-							<div class="row">
-								<div class="col-8 col-12-medium">
+                        <section class="container box feature1">
+                            <div class="row">
+                                <div class="col-12">
+                                    <header class="first major">
+                                        <h2>Nuestros Productos</h2>
+                                        <p>Descubre nuestra amplia gama de productos ópticos.</p>
+                                    </header>
+                                </div>
+                                <div class="col-4 col-12-medium">
+                                    <section>
+                                        <a href="marcos.html" class="image featured"><img src="https://images.pexels.com/photos/1383416/pexels-photo-1383416.jpeg" alt="Marco 1" /></a>
+                                        <header class="second icon solid fa-glasses">
+                                            <h3>Marcos</h3>
+                                            <p>Marcos de moda para todos los gustos.</p>
+                                        </header>
+                                    </section>
+                                </div>
+                                <div class="col-4 col-12-medium">
+                                    <section>
+                                        <a href="cristales.html" class="image featured"><img src="https://images.pexels.com/photos/13800739/pexels-photo-13800739.jpeg" alt="Cristal 1" /></a>
+                                        <header class="second icon solid fa-eye">
+                                            <h3>Cristales</h3>
+                                            <p>Cristales de alta calidad para una visión perfecta.</p>
+                                        </header>
+                                    </section>
+                                </div>
+                                <div class="col-4 col-12-medium">
+                                    <section>
+                                        <a href="lentes_contacto.html" class="image featured"><img src="https://images.pexels.com/photos/5621863/pexels-photo-5621863.jpeg" alt="Lentes de Contacto 1" /></a>
+                                        <header class="second icon solid fa-heart">
+                                            <h3>Lentes de Contacto</h3>
+                                            <p>Lentes de contacto cómodos y seguros.</p>
+                                        </header>
+                                    </section>
+                                </div>
+                            </div>
+                        </section>
 
-									<!-- Article list -->
-									<section class="box article-list">
-										<h2 class="icon fa-file-alt">Productos Destacados</h2>
+                    </div>
+                </div>
+                <div class="wrapper style2">
+                    <div class="inner">
 
-										<!-- Excerpt -->
-										<article class="box excerpt">
-											<a href="#" class="image left"><img src="assets/images/marco1.jpg" alt="" /></a>
-											<div>
-												<header>
-													<span class="date">Nuevo</span>
-													<h3><a href="#">Marco de Moda</a></h3>
-												</header>
-												<p>Descubre nuestros marcos de moda, perfectos para cualquier ocasión.</p>
-											</div>
-										</article>
+                        <section class="container box feature2">
+                            <div class="row">
+                                <div class="col-6 col-12-medium">
+                                    <section>
+                                        <header class="major">
+                                            <h2>Nuestros Servicios</h2>
+                                            <p>Ofrecemos una variedad de servicios para cuidar tu visión y tus gafas.</p>
+                                        </header>
+                                        <p>Nuestros expertos están aquí para ayudarte con todo lo que necesites. Desde revisiones de la vista hasta ajustes y reparaciones de gafas.</p>
+                                        <footer>
+                                            <a href="servicios.html" class="button medium icon solid fa-arrow-circle-right">Ver Servicios</a>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="col-6 col-12-medium">
+                                    <section>
+                                        <header class="major">
+                                            <h2>Ingresa tu Receta</h2>
+                                            <p>Ingresa tu receta médica para encontrar los mejores productos para ti.</p>
+                                        </header>
+                                        <p>Nuestros expertos revisarán tu receta y te recomendarán los mejores productos. Recibe tus productos en la comodidad de tu hogar.</p>
+                                        <footer>
+                                            <a href="recetas.html" class="button medium alt icon solid fa-info-circle">Ingresar Receta</a>
+                                        </footer>
+                                    </section>
+                                </div>
+                            </div>
+                        </section>
 
-										<!-- Excerpt -->
-										<article class="box excerpt">
-											<a href="#" class="image left"><img src="assets/images/cristal1.jpg" alt="" /></a>
-											<div>
-												<header>
-													<span class="date">Nuevo</span>
-													<h3><a href="#">Cristales de Alta Calidad</a></h3>
-												</header>
-												<p>Nuestros cristales de alta calidad te ofrecen la mejor claridad y protección.</p>
-											</div>
-										</article>
+                    </div>
+                </div>
+                <div class="wrapper style3">
+                    <div class="inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-8 col-12-medium">
 
-										<!-- Excerpt -->
-										<article class="box excerpt">
-											<a href="#" class="image left"><img src="assets/images/lentes1.jpg" alt="" /></a>
-											<div>
-												<header>
-													<span class="date">Nuevo</span>
-													<h3><a href="#">Lentes de Contacto</a></h3>
-												</header>
-												<p>Encuentra los lentes de contacto perfectos para ti, con la mejor comodidad y calidad.</p>
-											</div>
-										</article>
+                                    <section class="box article-list">
+                                        <h2 class="icon fa-file-alt">Productos Destacados</h2>
 
-									</section>
-								</div>
-								<div class="col-4 col-12-medium">
+                                        <article class="box excerpt">
+                                            <a href="#" class="image left"><img src="https://images.pexels.com/photos/5621863/pexels-photo-5621863.jpeg" alt="Marco 1" /></a>
+                                            <div>
+                                                <header>
+                                                    <span class="date">Nuevo</span>
+                                                    <h3><a href="#">Marco de Moda</a></h3>
+                                                </header>
+                                                <p>Descubre nuestros marcos de moda, perfectos para cualquier ocasión.</p>
+                                            </div>
+                                        </article>
 
-									<!-- Spotlight -->
-									<section class="box spotlight">
-										<h2 class="icon fa-file-alt">Destacado</h2>
-										<article>
-											<a href="#" class="image featured"><img src="assets/images/destacado.jpg" alt=""></a>
-											<header>
-												<h3><a href="#">Nuevos Marcos de Moda</a></h3>
-												<p>Descubre nuestra nueva colección de marcos de moda.</p>
-											</header>
-											<p>Nuestros nuevos marcos de moda están diseñados para ofrecerte el mejor estilo y comodidad. Perfectos para cualquier ocasión.</p>
-											<footer>
-												<a href="#" class="button alt icon solid fa-file-alt">Ver Más</a>
-											</footer>
-										</article>
-									</section>
+                                        <article class="box excerpt">
+                                            <a href="#" class="image left"><img src="https://images.pexels.com/photos/13800739/pexels-photo-13800739.jpeg" alt="Cristal 1" /></a>
+                                            <div>
+                                                <header>
+                                                    <span class="date">Nuevo</span>
+                                                    <h3><a href="#">Cristales de Alta Calidad</a></h3>
+                                                </header>
+                                                <p>Nuestros cristales de alta calidad te ofrecen la mejor claridad y protección.</p>
+                                            </div>
+                                        </article>
 
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                                        <article class="box excerpt">
+                                            <a href="#" class="image left"><img src="https://images.pexels.com/photos/5843431/pexels-photo-5843431.jpeg" alt="" /></a>
+                                            <div>
+                                                <header>
+                                                    <span class="date">Nuevo</span>
+                                                    <h3><a href="#">Lentes de Contacto</a></h3>
+                                                </header>
+                                                <p>Encuentra los lentes de contacto perfectos para ti, con la mejor comodidad y calidad.</p>
+                                            </div>
+                                        </article>
 
-			<!-- Footer Wrapper -->
-			<div id="footer-wrapper">
-				<footer id="footer" class="container">
-					<div class="row">
-						<div class="col-3 col-6-medium col-12-small">
-							<section>
-								<h2>Enlaces Rápidos</h2>
-								<ul class="divided">
-									<li><a href="marcos.html">Marcos</a></li>
-									<li><a href="cristales.html">Cristales</a></li>
-									<li><a href="lentes_contacto.html">Lentes de Contacto</a></li>
-									<li><a href="accesorios.html">Accesorios</a></li>
-									<li><a href="ofertas.html">Ofertas Especiales</a></li>
-								</ul>
-							</section>
-						</div>
-						<div class="col-3 col-6-medium col-12-small">
-							<section>
-								<h2>Más Enlaces</h2>
-								<ul class="divided">
-									<li><a href="servicios.html">Servicios</a></li>
-									<li><a href="recetas.html">Recetas</a></li>
-									<li><a href="contacto.html">Contacto</a></li>
-									<li><a href="login.html">Login</a></li>
-								</ul>
-							</section>
-							<section>
-								<h2>Aún Más Enlaces</h2>
-								<ul class="divided">
-									<li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-									<li><a href="politica-devoluciones.html">Política de Devoluciones</a></li>
-									<li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
-									<li><a href="politica-privacidad.html">Política de Privacidad</a></li>
-								</ul>
-							</section>
-						</div>
-						<div class="col-6 col-12-medium imp-medium">
-							<section>
-								<h2><strong>Óptica CRISOULL</strong></h2>
-								<p>Bienvenido a Óptica Crisoull, tu tienda en línea para todas tus necesidades ópticas. Ofrecemos una amplia gama de productos y servicios para cuidar tu visión y tus gafas.</p>
-								<a href="about.html" class="button alt icon solid fa-arrow-circle-right">Más Información</a>
-							</section>
-							<section>
-								<h2>Contáctanos</h2>
-								<div>
-									<div class="row">
-										<div class="col-6 col-12-small">
-											<dl class="contact">
-												<dt>Twitter</dt>
-												<dd><a href="#">@optica_Crisoull</a></dd>
-												<dt>Facebook</dt>
-												<dd><a href="#">facebook.com/optica_Crisoull</a></dd>
-												<dt>WWW</dt>
-												<dd><a href="#">optica_Crisoull.com</a></dd>
-												<dt>Email</dt>
-												<dd><a href="#">info@optica_Crisoull.com</a></dd>
-											</dl>
-										</div>
-										<div class="col-6 col-12-small">
-											<dl class="contact">
-												<dt>Dirección</dt>
-												<dd>
-													1234 Calle Ficticia<br />
-													Ciudad, Estado 00000-0000<br />
-													País
-												</dd>
-												<dt>Teléfono</dt>
-												<dd>(000) 000-0000</dd>
-											</dl>
-										</div>
-									</div>
-								</div>
-							</section>
-						</div>
-						<div class="col-12">
-							<div id="copyright">
-								<ul class="menu">
-									<li>&copy; Óptica CRISOULL. Todos los derechos reservados</li><li>Diseño: <a href="http://html5up.net">HTML5 UP</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</footer>
-			</div>
+                                    </section>
+                                </div>
+                                <div class="col-4 col-12-medium">
 
-		</div>
+                                    <section class="box spotlight">
+                                        <h2 class="icon fa-file-alt">Destacado</h2>
+                                        <article>
+                                            <a href="#" class="image featured"><img src="https://images.pexels.com/photos/5201994/pexels-photo-5201994.jpeg" alt=""></a>
+                                            <header>
+                                                <h3><a href="#">Nuevos Marcos de Moda</a></h3>
+                                                <p>Descubre nuestra nueva colección de marcos de moda.</p>
+                                            </header>
+                                            <p>Nuestros nuevos marcos de moda están diseñados para ofrecerte el mejor estilo y comodidad. Perfectos para cualquier ocasión.</p>
+                                            <footer>
+                                                <a href="#" class="button alt icon solid fa-file-alt">Ver Más</a>
+                                            </footer>
+                                        </article>
+                                    </section>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-	</body>
+            <div id="footer-wrapper">
+                <footer id="footer" class="container">
+                    <div class="row">
+                        <div class="col-3 col-6-medium col-12-small">
+                            <section>
+                                <h2>Enlaces Rápidos</h2>
+                                <ul class="divided">
+                                    <li><a href="marcos.html">Marcos</a></li>
+                                    <li><a href="cristales.html">Cristales</a></li>
+                                    <li><a href="lentes_contacto.html">Lentes de Contacto</a></li>
+                                    <li><a href="accesorios.html">Accesorios</a></li>
+                                    <li><a href="ofertas.html">Ofertas Especiales</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col-3 col-6-medium col-12-small">
+                            <section>
+                                <h2>Más Enlaces</h2>
+                                <ul class="divided">
+                                    <li><a href="servicios.html">Servicios</a></li>
+                                    <li><a href="recetas.html">Recetas</a></li>
+                                    <li><a href="contacto.html">Contacto</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>Aún Más Enlaces</h2>
+                                <ul class="divided">
+                                    <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                                    <li><a href="politica-devoluciones.html">Política de Devoluciones</a></li>
+                                    <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+                                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col-6 col-12-medium imp-medium">
+                            <section>
+                                <h2><strong>Óptica CRISOULL</strong></h2>
+                                <p>Bienvenido a Óptica Crisoull, tu tienda en línea para todas tus necesidades ópticas. Ofrecemos una amplia gama de productos y servicios para cuidar tu visión y tus gafas.</p>
+                                <a href="about.html" class="button alt icon solid fa-arrow-circle-right">Más Información</a>
+                            </section>
+                            <section>
+                                <h2>Contáctanos</h2>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-6 col-12-small">
+                                            <dl class="contact">
+                                                <dt>Twitter</dt>
+                                                <dd><a href="#">@optica_Crisoull</a></dd>
+                                                <dt>Facebook</dt>
+                                                <dd><a href="#">facebook.com/optica_Crisoull</a></dd>
+                                                <dt>WWW</dt>
+                                                <dd><a href="#">optica_Crisoull.com</a></dd>
+                                                <dt>Email</dt>
+                                                <dd><a href="#">info@optica_Crisoull.com</a></dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-6 col-12-small">
+                                            <dl class="contact">
+                                                <dt>Dirección</dt>
+                                                <dd>
+                                                    1234 Calle Ficticia<br />
+                                                    Ciudad, Estado 00000-0000<br />
+                                                    País
+                                                </dd>
+                                                <dt>Teléfono</dt>
+                                                <dd>(569) 41228089</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-12">
+                            <div id="copyright">
+                                <ul class="menu">
+                                    <li>&copy; Óptica CRISOULL. Todos los derechos reservados</li><li>Diseño: <a href="http://benjamingonzalez.netlify.app">BJ SOLUCIONES INFORMATICAS SPA</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
